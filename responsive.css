@@ -1,0 +1,113 @@
+@media (max-width: 700px){
+    #taskheader-pc{
+        display: none;
+    }
+    #header .alt-task{
+        display: inline;
+    }
+    .nav-overlay{
+        animation: FadeIn linear 0.2s;
+    }
+    .taskheader-mobile{
+        height: 100%;
+        background-color: rgba(255, 254, 254, 0.986);
+        transition: all linear 0.2s;
+    }
+    .taskheader-mobile li{
+        display: block;
+        list-style: 46px;
+        font-size: 20px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        border-bottom: solid rgba(0, 0, 0, 0.11) 1px;
+    }
+
+    .taskheader-mobile li:hover{
+        background-color: white;
+    }
+
+    .taskheader-mobile div{
+        padding: 8px 12px;
+    }
+
+    .taskheader-mobile a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.747);
+    }
+    .nav_input:checked ~ .nav-overlay{
+        display: block;
+    }
+    .nav_input:checked ~ .taskheader-mobile{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #content .bandmem .bandmem-item{
+        float:none;
+        padding: 16px 0;
+        box-sizing: content-box;   
+    }
+
+    #content .bandmem .bandmem-item .bandmem-pic{
+        width: 346px;
+    }
+
+    #content .tour-places{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .tour-places .place-section{
+        width: 345px;
+    }
+
+    #content .tour-places .place-section .place-sec-desc .buy-tickets{
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .contact .contact-container .container-left{
+        width: 100%;
+        padding: 0 18px;
+    }
+
+    .contact .contact-container .container-right{
+        width: 100%;
+        padding: 18px;
+    }
+    .contact .contact-container .container-right input{
+        width: 100% !important;
+    }
+
+    .contact .send-button{
+        width: 91%; 
+       font-size: 16px;
+       margin-left: auto;
+       margin-right: auto;
+       float: none;
+    }
+
+    .contact .send-button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    #footer .social-media{
+        letter-spacing: 8px;
+    }
+    #footer .social-media .media-icon{
+        font-size: 34px;
+    }
+    #footer .hastag{
+        font-size: 20px;
+    }
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
